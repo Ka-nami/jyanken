@@ -1,0 +1,34 @@
+body{
+  background-color:rgb(98, 14, 11);
+}
+#cardgrid{
+  width:90%;
+  margin:10px auto;
+  display:grid;
+  grid-template-columns:repeat(13,1fr);
+  gap:0.5vh;
+}
+
+div.card{
+  aspect-ratio: 2 / 3;
+  background-size:contain;
+}
+
+div.back{
+  background-image:url(../images/z01.gif) !important;
+}
+
+@keyframes fadeout{
+  40%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+div.fadeout{
+  animation-name:fadeout;
+  animation-duration:2s;
+  animation-fill-mode:forwards; 
+}
+
